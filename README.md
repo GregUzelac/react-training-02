@@ -1,3 +1,9 @@
+Me learning React. Ben is tutoring. Finished:
+-Fake sign-in page with user/password
+-Mock home page with a few options for a make believe app.
+ The app will track maintenance on factory machines.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
