@@ -3,14 +3,8 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -28,11 +22,31 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonPrimary {color: #fff; background-color: #007bff; border-color: #007bff}
+.buttonSecondary {color: #fff; background-color: #6c757d; border-color: #6c757d;}
+.buttonSuccess {color: #fff; background-color: #28a745; border-color: #28a745;}
+.buttonDanger {color: #fff; background-color: #dc3545; border-color: #dc3545;}
+.buttonWarning {color: #212529; background-color: #ffc107; border-color: #ffc107;}
+.buttonInfo {color: #fff; background-color: #17a2b8; border-color: #17a2b8;}
+.buttonLight {color: #212529; background-color: #f8f9fa; border-color: #f8f9fa;}
+.buttonDark {color: #fff; background-color: #343a40; border-color: #343a40;}
+.buttonLink {font-weight: 400; color: #007bff; background-color: transparent;}
+
+.Error {
+  background-color: lightpink;
+  color: black;
+  border-radius: 3px;
 }
