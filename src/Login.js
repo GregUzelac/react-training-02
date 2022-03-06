@@ -18,6 +18,8 @@ export function Login({submitOnClick}) {
           return;
       }
       setErrorMessage('');
+
+      e.username = usernameInput;
       submitOnClick(e);
   }
 
@@ -35,14 +37,14 @@ export function Login({submitOnClick}) {
             <label htmlFor="email">User: </label>
           </div>
           <div>
-            <input type="email" name="email" placeholder="e-mail" required
+            <input type="email" id="email" placeholder="e-mail" required
                 value={usernameInput} onInput={e => usernameSetInput(e.target.value)} />
           </div>
           <div>
             <label htmlFor="password">Password: </label>
           </div>
           <div>
-            <input type="password" name="password" required
+            <input type="password" id="password" required
                 value={passwordInput} onInput={e => passwordSetInput(e.target.value)} />
           </div>
         </div>
