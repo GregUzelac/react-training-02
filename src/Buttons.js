@@ -8,37 +8,55 @@ export function Button({title="OK", onClick, className, type="button"}) {
 }
 
 export function ButtonPrimary({title, onClick, type}) {
-  return Button({title, onClick, type, className: "buttonPrimary" });
+  return (
+    <Button title={title} onClick={onClick} type={type} className="buttonPrimary" />
+  );
 }
 
 export function ButtonSecondary({title, onClick}) {
-  return Button({title, onClick, className: "buttonSecondary"});
+  return (
+    <Button title={title} onClick={onClick} className="buttonSecondary" />
+  );
 }
 
 export function ButtonSuccess({title, onClick}) {
-  return Button({title, onClick, className: "buttonSuccess"});
+  return (
+    <Button title={title} onClick={onClick} className="buttonSuccess" />
+  );
 }
 
 export function ButtonDanger({title, onClick}) {
-  return Button({title, onClick, className: "buttonDanger"});
+  return (
+    <Button title={title} onClick={onClick} className="buttonDanger" />
+  );
 }
 
 export function ButtonWarning({title, onClick}) {
-  return Button({title, onClick, className: "buttonWarning"});
+  return (
+    <Button title={title} onClick={onClick} className="buttonWarning" />
+  );
 }
 
 export function ButtonInfo({title, onClick}) {
-  return Button({title, onClick, className: "buttonInfo"});
+  return (
+    <Button title={title} onClick={onClick} className="buttonInfo" />
+  );
 }
 
 export function ButtonLight({title, onClick}) {
-  return Button({title, onClick, className: "buttonLight"});
+  return (
+    <Button title={title} onClick={onClick} className="buttonLight" />
+  );
 }
 
 export function ButtonDark({title, onClick}) {
-  return Button({title, onClick, className: "buttonDark"});
+  return (
+    <Button title={title} onClick={onClick} className="buttonDark" />
+  );
 }
 
 export function ButtonLink({title, onClick}) {
-  return Button({title, onClick, className: "buttonLink"});
+  return (
+    <Button title={title} onClick={onClick} className="buttonLink" />
+  );
 }
