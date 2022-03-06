@@ -1,7 +1,7 @@
-Me learning React. Ben is tutoring. Finished:
--Fake sign-in page with user/password
--Mock home page with a few options for a make believe app.
- The app will track maintenance on factory machines.
+Me learning React. Ben is tutoring. Finished so far:
+* Fake sign-in page with user/password
+* Mock home page with a few options for an app I'd like to build.
+  The app will track maintenance on factory machines.
 
 
 # Getting Started with Create React App
