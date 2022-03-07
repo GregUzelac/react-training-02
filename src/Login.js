@@ -4,8 +4,8 @@ import { ErrorMessage }  from "./ErrorMessage.js";
 import { useState }      from 'react';
 
 export function Login({submitOnClick}) {
-  const [usernameInput, usernameSetInput] = useState('');
-  const [passwordInput, passwordSetInput] = useState('');
+  const [usernameInput, setUsername] = useState('');
+  const [passwordInput, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
   function localSubmitOnClick(e) {
@@ -37,15 +37,15 @@ export function Login({submitOnClick}) {
             <label htmlFor="email">User: </label>
           </div>
           <div>
-            <input type="email" id="email" placeholder="e-mail" required
-                value={usernameInput} onInput={e => usernameSetInput(e.target.value)} />
+            <input type="email" id="email" name="email" placeholder="e-mail" required
+                value={usernameInput} onInput={e => setUsername(e.target.value)} />
           </div>
           <div>
             <label htmlFor="password">Password: </label>
           </div>
           <div>
-            <input type="password" id="password" required
-                value={passwordInput} onInput={e => passwordSetInput(e.target.value)} />
+            <input type="password" id="password" name="password" required
+                value={passwordInput} onInput={e => setPassword(e.target.value)} />
           </div>
         </div>
 

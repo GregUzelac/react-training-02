@@ -7,22 +7,23 @@ import { LoggedIn } from './LoggedIn.js';
 const AppName = "PMM - Plant Machine Maintenance";
 
 function App() {
-  const [loggedIn, setLogin] = useState(false);
-  
+  const [user, setUser] = useState("");
+
   function loginSubmitOnClick(e) {
-    console.log('loginSubmitOnClick');
-    setLogin(true);
-    useEffect(() => {
-      document.title = AppName + " - " + e.username;
-    });
+    setUser({ name: e.username });
   }
+
+  useEffect(() => {
+    const name = user.name ? " - " + user.name : "";
+    document.title = AppName + name;
+  }, [user.name]);
 
   return (
     <div className="App">
       <header className="App-header">
         {AppName}
         <img src={logo} className="App-logo" alt="logo" />
-        { loggedIn ? <LoggedIn /> : <Login submitOnClick={loginSubmitOnClick}/> }
+        { user.name ? <LoggedIn /> : <Login submitOnClick={loginSubmitOnClick}/> }
       </header>
     </div>
   );
