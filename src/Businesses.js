@@ -1,24 +1,20 @@
 import React from 'react';
 
+const allBusinesses = [
+    "GFT Refrigeration & Sons",
+    "Flooring For Less",
+    "Jim's Famous Hot Wings"
+  ];
+  
 //Before React 16.8, class-based components
 export class Businesses extends React.Component {
-    /*constructor(props) {
-        super(props);
-        this.state = {color: "red"};
-    }*/
     render() {
         return (
         <div>
-            Businesses
-            <div>
-                Business A
-            </div>
-            <div>
-                Business B
-            </div>
-            <div>
-                Business C
-            </div>
+            <p>Businesses</p>
+            {allBusinesses.map((business, index) => (
+                <div key={`business-${index}`}>{business}</div>                
+            ))}
         </div>
         );
     }
