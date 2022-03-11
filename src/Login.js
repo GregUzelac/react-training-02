@@ -31,7 +31,7 @@ export function Login({submitOnClick}) {
 
   return (
     <div className="Login">
-      <form type>
+      <form>
         <div style={twoColumnGrid}>
           <div>        
             <label htmlFor="email">User: </label>

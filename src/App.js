@@ -23,7 +23,7 @@ function App() {
       <header className="App-header">
         {AppName}
         <img src={logo} className="App-logo" alt="logo" />
-        { user.name ? <LoggedIn /> : <Login submitOnClick={loginSubmitOnClick}/> }
+        { user.name && user.name.length ? <LoggedIn /> : <Login submitOnClick={loginSubmitOnClick}/> }
       </header>
     </div>
   );
