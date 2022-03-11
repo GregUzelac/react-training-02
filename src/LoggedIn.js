@@ -17,9 +17,10 @@ export function LoggedIn() {
           <Tab tabFor="Repairs">Repairs</Tab>
           <Tab tabFor="Parts">Parts</Tab>
           <Tab tabFor="Users">Users</Tab>
-          <Tab tabFor="Barcode">Scan barcode</Tab>
+          <Tab tabFor="Barcode">Scan a barcode</Tab>
         </TabList>
         <TabPanel tabId="Businesses">
+          <p>Businesses</p>
           <Businesses />
         </TabPanel>
         <TabPanel tabId="Plants">
@@ -38,7 +39,7 @@ export function LoggedIn() {
           <p>Users</p>
         </TabPanel>
         <TabPanel tabId="Barcode">
-          <p>Scan the QR / Barcode...</p>
+          <p>Scan the QR / Barcode now...</p>
         </TabPanel>
       </Tabs>    )
 }
